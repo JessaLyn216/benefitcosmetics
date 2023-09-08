@@ -1,0 +1,23 @@
+.product {
+    display: flex;
+    flex-direction: column;
+
+    .product-name {
+        font-weight: 600;
+        max-width: 70%;
+    }
+
+    .product-image {
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-height: 30vw;
+    }
+
+    .product-details {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+}

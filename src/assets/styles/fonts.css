@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "Krinkles";
+  src: url("../fonts/bodoni2.otf");
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-Medium.ttf");
+}
+
+@font-face {
+  font-family: "RalewayBold";
+  src: url("../fonts/Raleway-Bold.ttf");
+}
+
+@font-face {
+    font-family: "RalewayExtraBold";
+    src: url("../fonts/Raleway-ExtraBold.ttf");
+  }
+
+  /* @font-face {
+    font-family: "Bonnard";
+    src: url("../fonts/BonnardFLF.ttf");
+  } */
+
+  /* @font-face {
+    font-family: "Krinkles";
+    src: url("../fonts/Krinkles.ttf");
+  } */
