@@ -1,25 +1,26 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import './App.scss';
 import Products from './assets/main/Products';
-import Navbar from './assets/components/Navbar';
+import RootLayout from './assets/main/Root';
 import Home from './assets/main/Home';
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 const router = createBrowserRouter([
-  {path: '/', element: <Home />},
-  {path: '/', element: <Products />}
+  {
+    path: '/',
+    element: <RootLayout />,
+    children: [
+      { path: '/', element: <Home /> },
+      { path: '/products', element: <Products /> }
+    ]
+  }
 ]);
 
 function App() {
   AOS.init();
 
-  return (
-    <>
-     <Navbar />
-     <RouterProvider router={router} />
-    </>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
